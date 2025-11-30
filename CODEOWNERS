@@ -1,0 +1,14 @@
+# Require the reviewer account to approve any change under bootloader_main
+/bootloader_main/ @aezakmi1331
+
+# Require reviewer approval for configs and partitions too
+/configs/ @aezakmi1331
+/partitions/ @aezakmi1331
+
+# Protect bootloader source subfolders explicitly
+/bootloader_main/src/ @aezakmi1331
+/bootloader_main/include/ @aezakmi1331
+
+# Also protect top-level build and docs
+/CMakeLists.txt @aezakmi1331
+/docs/ @aezakmi1331
